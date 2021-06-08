@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="container img-resize d-flex justify-content-center mt-4 align-items-center">
+        <img src="images/ToDo Icon.png" alt="">
+        <h1>ToDo List</h1>
+    </div>
+  
+    <div class="container">
+      <span class="text-center mt-5"><h5>Set Your Plans</h5></span>
+
+     <form id="task-list">
+      <div class="mb-3">
+        <label for="title" class="form-label">Task Name</label>
+        <input type="text" class="form-control" id="task-name" placeholder="Enter Task Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1">Details</label>
+        <textarea class="form-control" id="task-details" rows="2"></textarea>
+      </div>
+      <div class="alert alert-danger text-center" style="display: none;">
+        Please enter a valid input!
+      </div>
+      <button type="submit" class="btn btn-primary col-12">Add</button>
+    </form>
+   
+
+      <table class="table table-striped mt-5"> 
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Details</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="list">
+          
+        </tbody>
+      </table>
+  </div>  
+    <!-- Bootstrap CSS -->
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
